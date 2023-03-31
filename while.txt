@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h4>random number!</h4>
+    <script>
+     let i=11;
+     while(i-->0)
+      console.log(i);
+      
+    </script>
+  </body>
+</html>
+

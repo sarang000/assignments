@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Toggle Image Example</title>
+    <script>
+      function toggleImage() {
+        var img = document.getElementById("myImage");
+        if (img.getAttribute("src") == "picccc.webp") {
+          img.src = "ram.webp";
+        } else {
+          img.src = "picccc.webp";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Toggle Image Example</h1>
+    <button onclick="toggleImage()">Toggle Image</button>
+    <img id="myImage" src="picccc.webp" alt="My Image">
+  </body>
+</html>
+
+

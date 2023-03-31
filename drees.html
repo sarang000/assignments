@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body> <ul id="myList">
+<li>Shirt</li>
+<li>Pant</li></ul> 
+<button id="myButton">Buy</button> <script>
+// Create a new list item element
+var newItem = document.createElement("li");
+var button = document.getElementById("myButton"); 
+newItem.textContent = "Shorts"; // Get the list element
+var list = document.getElementById("myList"); // Append the new item to the list
+list.appendChild(newItem);
+button.addEventListener("click", function() {
+alert("dress!");
+});</script> </body></html>

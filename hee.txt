@@ -1,0 +1,52 @@
+{
+  "_id": ObjectId,
+  "title": String,
+  "content": String,
+  "author": {
+    "name": String,
+    "email": String
+  },
+  "date": Date,
+  "hotel": {
+    "name": String,
+    "location": {
+      "address": String,
+      "city": String,
+      "state": String,
+      "zip": String,
+      "country": String
+    },
+    "rating": Number
+  },
+  "comments": [
+    {
+      "author": {
+        "name": String,
+        "email": String
+      },
+      "content": String,
+      "date": Date
+    }
+  ]
+}
+
+
+
+
+
+           +-------------+     +-------------+     +-------------+
+           |   Users     |     |   Posts     |     |   Comments  |  
+           +-------------+     +-------------+     +-------------+
+           | id          |     | id          |     | id          |
+           | name        |     | hotel       |     | body        |
+           | email       |     | body        |     | author_id   |
+           | password    |     | author_id   |     | post_id     |
+           | content     |     | created_at  |     | created_at  |
+           +-------------+     | updated_at  |     +-------------+
+                               | comments    |
+                               +-------------+
+                               | _id         |
+                               | body        |
+                               | author_id   |
+                               | created_at  |
+                               +-------------+
